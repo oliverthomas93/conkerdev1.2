@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #222222;
+    border: #403d39 solid 20px;
+}
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 5px;
+    font-family: 'Lacquer', cursive;
+}
+.intro-text h1, h2, h3 {
+    text-align: center;
+}
+.intro-text h1 { 
+    font-size: 7rem;
+    color: #e59500;
+    transform: translateY(100%) rotate(1.5deg);
+    opacity: 0;
+    animation-name: oliverthomas;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+}
+@keyframes oliverthomas {
+    from {opacity: 0; transform: translateY(100%) rotate(1.5deg)}
+    to {opacity: 1; transform: translateY(0) rotate(1.5deg)}
+}
+.intro-text h2 {
+    color: #840032;
+    font-size: 4.5rem;
+    transform: translateY(100%) rotate(-1.5deg);
+    opacity: 0;
+    animation-name: oliverthomas2;
+    animation-fill-mode: forwards;
+    animation-delay: 1.6s;
+    animation-duration: 1.5s;
+}
+@keyframes oliverthomas2 {
+    from {opacity: 0; transform: translateY(100%) rotate(-1.5deg)}
+    to {opacity: 1; transform: translateY(0) rotate(-1.5deg)}
+}
+.intro-text h3 {
+    color: #e5dada;
+    font-size: 2.75rem;
+    transform: translateY(100%) rotate(1.5deg);
+    opacity: 0;
+    animation-name: oliverthomas3;
+    animation-fill-mode: forwards;
+    animation-delay: 2.1s;
+    animation-duration: 1.5s;
+}
+@keyframes oliverthomas3 {
+    from {opacity: 0; transform: translateY(100%) rotate(1.5deg)}
+    to {opacity: 1; transform: translateY(0)rotate(1.5deg)}
+}
+.nav {
+    display: flex;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    color: #e5dada;
+    list-style-type: none;
+    font-family: 'Lacquer', cursive;
+    letter-spacing: 4px;
+    font-size: 17px;
+    opacity: 0;
+    animation-name: nav-fade;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+    animation-duration: 1.5s;
+}
+@keyframes nav-fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+.nav li {
+    margin-left: 30px;
+    transition: all;
+}
+#about {
+    transform: rotate(-1.5deg);
+}
+#portfolio {
+    transform: rotate(1.5deg);
+}
+#contact {
+    transform: rotate(-1.5deg);
+}
+#about:hover, #portfolio:hover, #contact:hover {
+    transform: rotate(0deg);
+    text-shadow: white 0px 0px 15px;
+}
+.arrows {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
+    color: #e5dada;
+    list-style-type: none;
+    letter-spacing: 0px;
+    font-family: 'Lacquer', cursive;
+    font-size: 50px;
+    opacity: 0;
+    animation-name: arrow-fade;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+    animation-duration: 1.5s;
+}
+@keyframes arrow-fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+.arrows li {
+    transform: rotate(-85deg);
+}
+.about {
+    display: flex;
+    width: 100vw;
+    height: 1000px;
+    background: #222222;
+    border-right: 20px solid #403d39;
+    border-bottom: 20px solid #403d39;
+    border-left: 20px solid #403d39;
+}
+.snowdon {
+    width: 300px;
+    height: 400px;
+    background-image: url(./IMG_5317.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-me {
+    width: 700px;
+    height: 400px;
+}
