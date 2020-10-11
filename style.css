@@ -9,7 +9,8 @@
     width: 100vw;
     height: 100vh;
     background: #222222;
-    border: #403d39 solid 20px;
+    border: #e5dada solid 12px;
+
 }
 .intro-text {
     display: flex;
@@ -19,20 +20,22 @@
     width: 100%;
     height: 100%;
     letter-spacing: 5px;
-    font-family: 'Lacquer', cursive;
+    
 }
-.intro-text h1, h2, h3 {
+.intro-text h1, .intro-text h2, .intro-text h3 {
     text-align: center;
 }
 .intro-text h1 { 
-    font-size: 7rem;
-    color: #e59500;
+    margin: 0 40px;
+    font-size: 4rem;
+    color: #e5dada;
     transform: translateY(100%) rotate(1.5deg);
     opacity: 0;
     animation-name: oliverthomas;
     animation-fill-mode: forwards;
     animation-delay: 0.5s;
     animation-duration: 2s;
+    font-family: 'Mansalva', cursive;
 }
 @keyframes oliverthomas {
     from {opacity: 0; transform: translateY(100%) rotate(1.5deg)}
@@ -40,13 +43,14 @@
 }
 .intro-text h2 {
     color: #840032;
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     transform: translateY(100%) rotate(-1.5deg);
     opacity: 0;
     animation-name: oliverthomas2;
     animation-fill-mode: forwards;
     animation-delay: 1.6s;
     animation-duration: 1.5s;
+    font-family: 'Mansalva', cursive;
 }
 @keyframes oliverthomas2 {
     from {opacity: 0; transform: translateY(100%) rotate(-1.5deg)}
@@ -54,13 +58,14 @@
 }
 .intro-text h3 {
     color: #e5dada;
-    font-size: 2.75rem;
+    font-size: 1.55rem;
     transform: translateY(100%) rotate(1.5deg);
     opacity: 0;
     animation-name: oliverthomas3;
     animation-fill-mode: forwards;
     animation-delay: 2.1s;
     animation-duration: 1.5s;
+    font-family: 'Lacquer', cursive;
 }
 @keyframes oliverthomas3 {
     from {opacity: 0; transform: translateY(100%) rotate(1.5deg)}
@@ -71,7 +76,7 @@
     position: absolute;
     top: 25px;
     right: 30px;
-    color: #e5dada;
+    color: #403d39;
     list-style-type: none;
     font-family: 'Lacquer', cursive;
     letter-spacing: 4px;
@@ -99,16 +104,18 @@
 #contact {
     transform: rotate(-1.5deg);
 }
-#about:hover, #portfolio:hover, #contact:hover {
+#about:hover, #portfolio:hover, #contact:hover, .arrows:hover {
     transform: rotate(0deg);
     text-shadow: white 0px 0px 15px;
+    color: #e5dada;
+    cursor: pointer;
 }
 .arrows {
     display: flex;
     position: absolute;
     bottom: 10px;
     right: 40px;
-    color: #e5dada;
+    color: #403d39;
     list-style-type: none;
     letter-spacing: 0px;
     font-family: 'Lacquer', cursive;
@@ -127,23 +134,29 @@
     transform: rotate(-85deg);
 }
 .about {
-    display: flex;
     width: 100vw;
-    height: 1000px;
     background: #222222;
-    border-right: 20px solid #403d39;
-    border-bottom: 20px solid #403d39;
-    border-left: 20px solid #403d39;
-}
-.snowdon {
-    width: 300px;
-    height: 400px;
-    background-image: url(./IMG_5317.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    border-right: 12px solid #e5dada;
+    border-bottom: 12px solid #e5dada;
+    border-left: 12px solid #e5dada;
 }
 .about-me {
-    width: 700px;
-    height: 400px;
+    width: 100%;
+    padding: 0 30px 25px 30px;
+    font-family: 'Mansalva', cursive;
+}
+.about-me h1 {
+    color: #e5dada;
+    padding: 80px 0 30px 0;
+    font-size: 2.5rem;
+}
+.about-me h2 {
+    color: #840032;
+    padding-bottom: 30px;
+    font-size: 2em;
+}
+.about-me p, .about-me ul {
+    color: #403d39;
+    line-height: 1.3em;
+    font-size: 1.2rem;
 }
