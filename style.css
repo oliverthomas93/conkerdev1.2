@@ -6,86 +6,84 @@
 
 .intro {
     position: relative;
-    width: 100vw;
     height: 100vh;
     background: #222222;
-    border: #e5dada solid 12px;
-
+    border: #22333b solid 40px;
+    font-family: 'Black Ops One', cursive;
+    /*#22333b*/
 }
 .intro-text {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-evenly;
     width: 100%;
     height: 100%;
-    letter-spacing: 5px;
-    
+    letter-spacing: 3px;
+    padding: 0 5% 0 8%;
+    padding-top: 20px;
+    max-width: 1400px;
+    color: #22333b;
 }
-.intro-text h1, .intro-text h2, .intro-text h3 {
-    text-align: center;
-}
-.intro-text h1 { 
-    margin: 0 40px;
-    font-size: 4rem;
-    color: #e5dada;
-    transform: translateY(100%) rotate(1.5deg);
+.intro-text h1 {
+    font-size: 5rem;
+    transform: translateY(100%);
     opacity: 0;
     animation-name: oliverthomas;
     animation-fill-mode: forwards;
     animation-delay: 0.5s;
     animation-duration: 2s;
-    font-family: 'Mansalva', cursive;
 }
 @keyframes oliverthomas {
-    from {opacity: 0; transform: translateY(100%) rotate(1.5deg)}
-    to {opacity: 1; transform: translateY(0) rotate(1.5deg)}
+    from {opacity: 0; transform: translateY(100%)}
+    to {opacity: 1; transform: translateY(0)}
 }
 .intro-text h2 {
-    color: #840032;
-    font-size: 2.5rem;
-    transform: translateY(100%) rotate(-1.5deg);
+    font-size: 5rem;
+    transform: translateY(100%);
     opacity: 0;
     animation-name: oliverthomas2;
     animation-fill-mode: forwards;
     animation-delay: 1.6s;
     animation-duration: 1.5s;
-    font-family: 'Mansalva', cursive;
+}
+.intro-text h1 span {
+    color: #e5dada;
+}
+.intro-text h2 span {
+    color: #840032;
 }
 @keyframes oliverthomas2 {
-    from {opacity: 0; transform: translateY(100%) rotate(-1.5deg)}
-    to {opacity: 1; transform: translateY(0) rotate(-1.5deg)}
+    from {opacity: 0; transform: translateY(100%)}
+    to {opacity: 1; transform: translateY(0)}
 }
 .intro-text h3 {
-    color: #e5dada;
-    font-size: 1.55rem;
-    transform: translateY(100%) rotate(1.5deg);
+    color: #22333b;
+    font-size: 3rem;
+    transform: translateY(100%);
     opacity: 0;
     animation-name: oliverthomas3;
     animation-fill-mode: forwards;
     animation-delay: 2.1s;
     animation-duration: 1.5s;
-    font-family: 'Lacquer', cursive;
 }
 @keyframes oliverthomas3 {
-    from {opacity: 0; transform: translateY(100%) rotate(1.5deg)}
-    to {opacity: 1; transform: translateY(0)rotate(1.5deg)}
+    from {opacity: 0; transform: translateY(100%)}
+    to {opacity: 1; transform: translateY(0)}
 }
 .nav {
     display: flex;
     position: absolute;
     top: 25px;
     right: 30px;
-    color: #403d39;
+    color: #22333b;
     list-style-type: none;
-    font-family: 'Lacquer', cursive;
-    letter-spacing: 4px;
-    font-size: 17px;
+    font-size: 20px;
     opacity: 0;
     animation-name: nav-fade;
     animation-fill-mode: forwards;
-    animation-delay: 3.5s;
+    animation-delay: 3s;
     animation-duration: 1.5s;
+    letter-spacing: 1px;
 }
 @keyframes nav-fade {
     from {opacity: 0}
@@ -95,68 +93,104 @@
     margin-left: 30px;
     transition: all;
 }
-#about {
-    transform: rotate(-1.5deg);
-}
-#portfolio {
-    transform: rotate(1.5deg);
-}
-#contact {
-    transform: rotate(-1.5deg);
-}
-#about:hover, #portfolio:hover, #contact:hover, .arrows:hover {
-    transform: rotate(0deg);
+#about:hover, #portfolio:hover, #contact:hover, .dots:hover {
     text-shadow: white 0px 0px 15px;
     color: #e5dada;
     cursor: pointer;
 }
-.arrows {
+.dots {
     display: flex;
     position: absolute;
     bottom: 10px;
     right: 40px;
-    color: #403d39;
+    color: #22333b;
     list-style-type: none;
-    letter-spacing: 0px;
-    font-family: 'Lacquer', cursive;
     font-size: 50px;
     opacity: 0;
-    animation-name: arrow-fade;
+    animation-name: dots-fade;
     animation-fill-mode: forwards;
-    animation-delay: 5s;
+    animation-delay: 3s;
     animation-duration: 1.5s;
+    font-family: 'Black Ops One', cursive;
 }
-@keyframes arrow-fade {
+@keyframes dots-fade {
     from {opacity: 0}
     to {opacity: 1}
 }
-.arrows li {
-    transform: rotate(-85deg);
+.dots li {
+    transform: rotate(-90deg);
 }
-.about {
-    width: 100vw;
+.about, .portfolio {
     background: #222222;
-    border-right: 12px solid #e5dada;
-    border-bottom: 12px solid #e5dada;
-    border-left: 12px solid #e5dada;
+    border-right: #22333b solid 40px;
+    border-bottom: #22333b solid 40px;
+    border-left: #22333b solid 40px;
 }
 .about-me {
     width: 100%;
-    padding: 0 30px 25px 30px;
-    font-family: 'Mansalva', cursive;
+    padding: 0 100px 25px 100px;
 }
 .about-me h1 {
     color: #e5dada;
     padding: 80px 0 30px 0;
     font-size: 2.5rem;
+    font-family: 'Black Ops One', cursive;
 }
 .about-me h2 {
     color: #840032;
     padding-bottom: 30px;
     font-size: 2em;
+    font-family: 'Black Ops One', cursive;
 }
 .about-me p, .about-me ul {
-    color: #403d39;
+    color: #22333b;
     line-height: 1.3em;
     font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
 }
+@media only screen and (max-width: 1340px) {
+    .intro-text {
+        max-width: 1100px;
+    }
+    .intro-text h1, .intro-text h2 {
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width: 1140px) {
+    .intro-text {
+        max-width: 900px;
+    }
+    .intro-text h1, .intro-text h2 {
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .intro-text h1, .intro-text h2 {
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .intro-text h1, .intro-text h2 {
+        font-size: 3rem;
+    }
+    .intro {
+        border: #22333b solid 20px;
+    }
+    .about, .portfolio {
+        border-right: #22333b solid 20px;
+        border-bottom: #22333b solid 20px;
+        border-left: #22333b solid 20px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .intro-text h1, .intro-text h2 {
+        font-size: 2.5rem;
+    }
+    .nav {
+        font-size: 15px;
+    }
+    .nav li {
+        margin-left: 20px;
+    }
+}
+
