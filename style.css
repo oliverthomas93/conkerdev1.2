@@ -197,8 +197,11 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    padding: 0 10px;
 }
 .text-box p {
+    position: relative;
+    top: -30px;
     color: #e5dada;
     margin: 0 40px;
     line-height: 1.4em;
@@ -211,7 +214,9 @@ main {
     color: #ffffff;
 }
 .text-box h1 {
-    margin: 30px 40px 30px 40px;
+    position: relative;
+    top: -30px;
+    margin: 40px 40px 15px 40px;
     color: #e5dada !important;
     font-size: 1.8em;
     font-family: 'Bebas Neue', cursive;
@@ -270,16 +275,28 @@ footer {
 }
     
 @media only screen and (max-width: 1340px) {
+    .project {
+        display: block;
+    }
     .intro-text {
         max-width: 1100px;
     }
     .intro-text h1, .intro-text h2 {
         font-size: 3.5rem;
     }
+    .text-box p, .text-box h1 {
+        top: 0;
+    }
 }
-@media only screen and (max-width: 1140px) {
-    .intro-text {
-        max-width: 900px;
+@media only screen and (max-width: 1000px) {
+    .portfolio-wrapper {
+        margin-top: 20px;
+    }
+    .portfolio {
+        padding: 40px 30px;
+    }
+    .first {
+        padding-top: 30px;
     }
 }
 @media only screen and (max-width: 800px) {
@@ -290,9 +307,6 @@ footer {
 @media only screen and (max-width: 730px) {
     #profile-pic {
         width: 150px;
-    }
-    .portfolio {
-        padding: 30px 30px;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -306,9 +320,17 @@ footer {
     }
 }
 @media only screen and (max-width: 550px) {
-    .images {
-        width: 75%;
-        margin: 0 auto;
+    .text-box h1 {
+        font-size: 1.5em;
+        margin: 40px 0px 15px 0px;
+    }
+    .text-box p {
+        margin: 0;
+        font-size: 1em;
+    }
+    .about-me p {
+        margin: 0 20px;
+        font-size: 1.1em;
     }
 }
 @media only screen and (max-width: 450px) {
