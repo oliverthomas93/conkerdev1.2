@@ -318,6 +318,9 @@ footer {
         background-image: url(./BeFunky-collage\ \(6\).jpeg);
         height: 900px;
     }
+    .dots {
+        bottom: 60px;
+    }
 }
 @media only screen and (max-width: 550px) {
     .text-box h1 {
