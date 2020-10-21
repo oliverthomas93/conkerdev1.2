@@ -134,7 +134,7 @@ main {
     border-radius: 50%;
     border: solid 7px #e5dada;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    filter: grayscale(100%);
+    box-sizing: content-box;
 }
 .about-me h1 {
     color: #e5dada;
