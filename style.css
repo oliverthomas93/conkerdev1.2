@@ -319,7 +319,7 @@ footer {
         height: 900px;
     }
     .dots {
-        bottom: 60px;
+        bottom: 100px;
     }
 }
 @media only screen and (max-width: 550px) {
