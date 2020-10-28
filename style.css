@@ -189,6 +189,13 @@ main {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     margin: 0 auto;
 }
+#dashboard-img {
+    width: 60%;
+}
+.img-wrapper {
+    width: 100%;
+    text-align: center;
+}
 .images:hover, .text-box p a:hover, .text-box h1:hover, .sm-links img:hover {
     filter: brightness(60%);
     cursor: pointer;
@@ -287,6 +294,9 @@ footer {
     .text-box p, .text-box h1 {
         top: 0;
     }
+    #dashboard-img {
+        width: 40%;
+    }
 }
 @media only screen and (max-width: 1000px) {
     .portfolio-wrapper {
@@ -297,6 +307,9 @@ footer {
     }
     .first {
         padding-top: 30px;
+    }
+    #dashboard-img {
+        width: 50%;
     }
 }
 @media only screen and (max-width: 800px) {
@@ -321,6 +334,9 @@ footer {
     .dots {
         bottom: 100px;
     }
+    #dashboard-img {
+        width: 75%;
+    }
 }
 @media only screen and (max-width: 550px) {
     .text-box h1 {
@@ -334,6 +350,9 @@ footer {
     .about-me p {
         margin: 0 20px;
         font-size: 1.1em;
+    }
+    #dashboard-img {
+        width: 95%;
     }
 }
 @media only screen and (max-width: 450px) {
