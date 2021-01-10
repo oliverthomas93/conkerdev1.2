@@ -1,3 +1,8 @@
+window.onload = () => {
+    let currentYear = new Date();
+    document.getElementById('year').innerHTML = currentYear.getFullYear();
+}
+
 $(document).ready(function() {
     $("a").on('click', function(event) {
         if (this.hash !== "") {
@@ -11,3 +16,4 @@ $(document).ready(function() {
         }
     });
 });
+
